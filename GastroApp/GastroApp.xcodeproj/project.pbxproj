@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E761903228CE6A070051550F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761903128CE6A070051550F /* AppDelegate.swift */; };
+		E761903428CE6A070051550F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761903328CE6A070051550F /* SceneDelegate.swift */; };
+		E761903628CE6A070051550F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761903528CE6A070051550F /* ViewController.swift */; };
+		E761903928CE6A070051550F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761903728CE6A070051550F /* Main.storyboard */; };
+		E761903B28CE6A090051550F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E761903A28CE6A090051550F /* Assets.xcassets */; };
+		E761903E28CE6A090051550F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761903C28CE6A090051550F /* LaunchScreen.storyboard */; };
+		E761906A28CE700A0051550F /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761906928CE700A0051550F /* LoginProtocol.swift */; };
+		E761906C28CE701D0051550F /* AnasayfaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761906B28CE701D0051550F /* AnasayfaProtocol.swift */; };
+		E761907028CE70450051550F /* DetayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761906F28CE70450051550F /* DetayProtocol.swift */; };
+		E761907228CE70560051550F /* SepetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761907128CE70560051550F /* SepetProtocol.swift */; };
+		E761907528CE70A60051550F /* Yemek.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761907428CE70A60051550F /* Yemek.swift */; };
+		E761907728CE72020051550F /* YemekResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761907628CE72020051550F /* YemekResponse.swift */; };
+		E761907928CE729C0051550F /* SepetYemek.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761907828CE729C0051550F /* SepetYemek.swift */; };
+		E761907B28CE73480051550F /* SepetYemekResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761907A28CE73480051550F /* SepetYemekResponse.swift */; };
+		E761907D28CE747B0051550F /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761907C28CE747B0051550F /* LoginStoryboard.storyboard */; };
+		E761907F28CE748B0051550F /* AnasayfaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761907E28CE748B0051550F /* AnasayfaStoryboard.storyboard */; };
+		E761908328CE74A40051550F /* DetayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761908228CE74A40051550F /* DetayStoryboard.storyboard */; };
+		E761908528CE74B30051550F /* SepetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761908428CE74B30051550F /* SepetStoryboard.storyboard */; };
+		E761908728CE763D0051550F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761908628CE763D0051550F /* LoginVC.swift */; };
+		E761908928CE769A0051550F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761908828CE769A0051550F /* LoginPresenter.swift */; };
+		E761908B28CE773B0051550F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761908A28CE773B0051550F /* LoginInteractor.swift */; };
+		E761908D28CE7D1C0051550F /* AnasayfaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761908C28CE7D1C0051550F /* AnasayfaVC.swift */; };
+		E761908F28CE808E0051550F /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761908E28CE808E0051550F /* AnasayfaInteractor.swift */; };
+		E761909128CE815E0051550F /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761909028CE815E0051550F /* AnasayfaPresenter.swift */; };
+		E761909328CE82FD0051550F /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761909228CE82FD0051550F /* AnasayfaRouter.swift */; };
+		E761909628CE870F0051550F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E761909528CE870F0051550F /* Alamofire */; };
+		E761909928CE87210051550F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E761909828CE87210051550F /* Kingfisher */; };
+		E761909B28CE90780051550F /* YemekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761909A28CE90780051550F /* YemekTableViewCell.swift */; };
+		E761909D28CE95870051550F /* DetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761909C28CE95870051550F /* DetayInteractor.swift */; };
+		E761909F28CE963D0051550F /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761909E28CE963D0051550F /* DetayVC.swift */; };
+		E76190A128CEA4190051550F /* DetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190A028CEA4190051550F /* DetayPresenter.swift */; };
+		E76190A328CEA4540051550F /* DetayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190A228CEA4540051550F /* DetayRouter.swift */; };
+		E76190A528CEB1150051550F /* SepetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190A428CEB1150051550F /* SepetInteractor.swift */; };
+		E76190A728CEB1250051550F /* SepetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190A628CEB1250051550F /* SepetPresenter.swift */; };
+		E76190A928CEB1340051550F /* SepetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190A828CEB1340051550F /* SepetRouter.swift */; };
+		E76190AB28CEB4C30051550F /* SepetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76190AA28CEB4C30051550F /* SepetVC.swift */; };
+		E7CFDC0828CECBBD000C3B0C /* SepetUrunCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFDC0728CECBBD000C3B0C /* SepetUrunCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E761902E28CE6A070051550F /* GastroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GastroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E761903128CE6A070051550F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E761903328CE6A070051550F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E761903528CE6A070051550F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E761903828CE6A070051550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E761903A28CE6A090051550F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E761903D28CE6A090051550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E761903F28CE6A090051550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E761906928CE700A0051550F /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		E761906B28CE701D0051550F /* AnasayfaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocol.swift; sourceTree = "<group>"; };
+		E761906F28CE70450051550F /* DetayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayProtocol.swift; sourceTree = "<group>"; };
+		E761907128CE70560051550F /* SepetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetProtocol.swift; sourceTree = "<group>"; };
+		E761907428CE70A60051550F /* Yemek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemek.swift; sourceTree = "<group>"; };
+		E761907628CE72020051550F /* YemekResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekResponse.swift; sourceTree = "<group>"; };
+		E761907828CE729C0051550F /* SepetYemek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemek.swift; sourceTree = "<group>"; };
+		E761907A28CE73480051550F /* SepetYemekResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemekResponse.swift; sourceTree = "<group>"; };
+		E761907C28CE747B0051550F /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		E761907E28CE748B0051550F /* AnasayfaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnasayfaStoryboard.storyboard; sourceTree = "<group>"; };
+		E761908228CE74A40051550F /* DetayStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetayStoryboard.storyboard; sourceTree = "<group>"; };
+		E761908428CE74B30051550F /* SepetStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SepetStoryboard.storyboard; sourceTree = "<group>"; };
+		E761908628CE763D0051550F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E761908828CE769A0051550F /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E761908A28CE773B0051550F /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		E761908C28CE7D1C0051550F /* AnasayfaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaVC.swift; sourceTree = "<group>"; };
+		E761908E28CE808E0051550F /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
+		E761909028CE815E0051550F /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
+		E761909228CE82FD0051550F /* AnasayfaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
+		E761909A28CE90780051550F /* YemekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTableViewCell.swift; sourceTree = "<group>"; };
+		E761909C28CE95870051550F /* DetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayInteractor.swift; sourceTree = "<group>"; };
+		E761909E28CE963D0051550F /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
+		E76190A028CEA4190051550F /* DetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayPresenter.swift; sourceTree = "<group>"; };
+		E76190A228CEA4540051550F /* DetayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayRouter.swift; sourceTree = "<group>"; };
+		E76190A428CEB1150051550F /* SepetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetInteractor.swift; sourceTree = "<group>"; };
+		E76190A628CEB1250051550F /* SepetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetPresenter.swift; sourceTree = "<group>"; };
+		E76190A828CEB1340051550F /* SepetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetRouter.swift; sourceTree = "<group>"; };
+		E76190AA28CEB4C30051550F /* SepetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetVC.swift; sourceTree = "<group>"; };
+		E7CFDC0728CECBBD000C3B0C /* SepetUrunCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetUrunCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E761902B28CE6A070051550F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E761909928CE87210051550F /* Kingfisher in Frameworks */,
+				E761909628CE870F0051550F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E761902528CE6A060051550F = {
+			isa = PBXGroup;
+			children = (
+				E761903028CE6A070051550F /* GastroApp */,
+				E761902F28CE6A070051550F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E761902F28CE6A070051550F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E761902E28CE6A070051550F /* GastroApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E761903028CE6A070051550F /* GastroApp */ = {
+			isa = PBXGroup;
+			children = (
+				E761904A28CE6D750051550F /* Module */,
+				E761903128CE6A070051550F /* AppDelegate.swift */,
+				E761903328CE6A070051550F /* SceneDelegate.swift */,
+				E761903528CE6A070051550F /* ViewController.swift */,
+				E761903728CE6A070051550F /* Main.storyboard */,
+				E761903A28CE6A090051550F /* Assets.xcassets */,
+				E761903C28CE6A090051550F /* LaunchScreen.storyboard */,
+				E761903F28CE6A090051550F /* Info.plist */,
+			);
+			path = GastroApp;
+			sourceTree = "<group>";
+		};
+		E761904528CE6D240051550F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E761905028CE6DF30051550F /* Protocol */,
+				E761904F28CE6DE80051550F /* Router */,
+				E761904D28CE6DD00051550F /* Presenter */,
+				E761904C28CE6DC70051550F /* Interactor */,
+				E761904B28CE6DBC0051550F /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E761904628CE6D2D0051550F /* Anasayfa */ = {
+			isa = PBXGroup;
+			children = (
+				E761905628CE6E360051550F /* Protocol */,
+				E761905528CE6E2E0051550F /* Router */,
+				E761905328CE6E1D0051550F /* Presenter */,
+				E761905228CE6E140051550F /* Interactor */,
+				E761905128CE6E0C0051550F /* View */,
+			);
+			path = Anasayfa;
+			sourceTree = "<group>";
+		};
+		E761904828CE6D550051550F /* Detay */ = {
+			isa = PBXGroup;
+			children = (
+				E761906228CE6EA10051550F /* Protocol */,
+				E761906128CE6E910051550F /* Router */,
+				E761905F28CE6E830051550F /* Presenter */,
+				E761905E28CE6E7A0051550F /* Interactor */,
+				E761905D28CE6E720051550F /* View */,
+			);
+			path = Detay;
+			sourceTree = "<group>";
+		};
+		E761904928CE6D600051550F /* Sepet */ = {
+			isa = PBXGroup;
+			children = (
+				E761906828CE6EE00051550F /* Protocol */,
+				E761906728CE6ECF0051550F /* Router */,
+				E761906528CE6EB90051550F /* Presenter */,
+				E761906428CE6EB20051550F /* Interactor */,
+				E761906328CE6EAC0051550F /* View */,
+			);
+			path = Sepet;
+			sourceTree = "<group>";
+		};
+		E761904A28CE6D750051550F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E761907328CE70800051550F /* Entity */,
+				E761904528CE6D240051550F /* Login */,
+				E761904628CE6D2D0051550F /* Anasayfa */,
+				E761904828CE6D550051550F /* Detay */,
+				E761904928CE6D600051550F /* Sepet */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E761904B28CE6DBC0051550F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E761907C28CE747B0051550F /* LoginStoryboard.storyboard */,
+				E761908628CE763D0051550F /* LoginVC.swift */,
+			);
+			name = View;
+			path = "vİEW";
+			sourceTree = "<group>";
+		};
+		E761904C28CE6DC70051550F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E761908A28CE773B0051550F /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E761904D28CE6DD00051550F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E761908828CE769A0051550F /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E761904F28CE6DE80051550F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E761905028CE6DF30051550F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E761906928CE700A0051550F /* LoginProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E761905128CE6E0C0051550F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E761907E28CE748B0051550F /* AnasayfaStoryboard.storyboard */,
+				E761908C28CE7D1C0051550F /* AnasayfaVC.swift */,
+				E761909A28CE90780051550F /* YemekTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E761905228CE6E140051550F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E761908E28CE808E0051550F /* AnasayfaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E761905328CE6E1D0051550F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E761909028CE815E0051550F /* AnasayfaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E761905528CE6E2E0051550F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E761909228CE82FD0051550F /* AnasayfaRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E761905628CE6E360051550F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E761906B28CE701D0051550F /* AnasayfaProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E761905D28CE6E720051550F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E761908228CE74A40051550F /* DetayStoryboard.storyboard */,
+				E761909E28CE963D0051550F /* DetayVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E761905E28CE6E7A0051550F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E761909C28CE95870051550F /* DetayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E761905F28CE6E830051550F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E76190A028CEA4190051550F /* DetayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E761906128CE6E910051550F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E76190A228CEA4540051550F /* DetayRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E761906228CE6EA10051550F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E761906F28CE70450051550F /* DetayProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E761906328CE6EAC0051550F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E761908428CE74B30051550F /* SepetStoryboard.storyboard */,
+				E76190AA28CEB4C30051550F /* SepetVC.swift */,
+				E7CFDC0728CECBBD000C3B0C /* SepetUrunCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E761906428CE6EB20051550F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E76190A428CEB1150051550F /* SepetInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E761906528CE6EB90051550F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E76190A628CEB1250051550F /* SepetPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E761906728CE6ECF0051550F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E76190A828CEB1340051550F /* SepetRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E761906828CE6EE00051550F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E761907128CE70560051550F /* SepetProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E761907328CE70800051550F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E761907428CE70A60051550F /* Yemek.swift */,
+				E761907628CE72020051550F /* YemekResponse.swift */,
+				E761907828CE729C0051550F /* SepetYemek.swift */,
+				E761907A28CE73480051550F /* SepetYemekResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E761902D28CE6A070051550F /* GastroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E761904228CE6A090051550F /* Build configuration list for PBXNativeTarget "GastroApp" */;
+			buildPhases = (
+				E761902A28CE6A070051550F /* Sources */,
+				E761902B28CE6A070051550F /* Frameworks */,
+				E761902C28CE6A070051550F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GastroApp;
+			packageProductDependencies = (
+				E761909528CE870F0051550F /* Alamofire */,
+				E761909828CE87210051550F /* Kingfisher */,
+			);
+			productName = GastroApp;
+			productReference = E761902E28CE6A070051550F /* GastroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E761902628CE6A060051550F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E761902D28CE6A070051550F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E761902928CE6A060051550F /* Build configuration list for PBXProject "GastroApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E761902528CE6A060051550F;
+			packageReferences = (
+				E761909428CE870F0051550F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E761909728CE87210051550F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = E761902F28CE6A070051550F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E761902D28CE6A070051550F /* GastroApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E761902C28CE6A070051550F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E761903E28CE6A090051550F /* LaunchScreen.storyboard in Resources */,
+				E761903B28CE6A090051550F /* Assets.xcassets in Resources */,
+				E761908528CE74B30051550F /* SepetStoryboard.storyboard in Resources */,
+				E761903928CE6A070051550F /* Main.storyboard in Resources */,
+				E761908328CE74A40051550F /* DetayStoryboard.storyboard in Resources */,
+				E761907D28CE747B0051550F /* LoginStoryboard.storyboard in Resources */,
+				E761907F28CE748B0051550F /* AnasayfaStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E761902A28CE6A070051550F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E761907728CE72020051550F /* YemekResponse.swift in Sources */,
+				E761906C28CE701D0051550F /* AnasayfaProtocol.swift in Sources */,
+				E761909328CE82FD0051550F /* AnasayfaRouter.swift in Sources */,
+				E761908F28CE808E0051550F /* AnasayfaInteractor.swift in Sources */,
+				E761908928CE769A0051550F /* LoginPresenter.swift in Sources */,
+				E761909B28CE90780051550F /* YemekTableViewCell.swift in Sources */,
+				E76190AB28CEB4C30051550F /* SepetVC.swift in Sources */,
+				E76190A728CEB1250051550F /* SepetPresenter.swift in Sources */,
+				E76190A528CEB1150051550F /* SepetInteractor.swift in Sources */,
+				E761909128CE815E0051550F /* AnasayfaPresenter.swift in Sources */,
+				E761907B28CE73480051550F /* SepetYemekResponse.swift in Sources */,
+				E761909F28CE963D0051550F /* DetayVC.swift in Sources */,
+				E761907228CE70560051550F /* SepetProtocol.swift in Sources */,
+				E7CFDC0828CECBBD000C3B0C /* SepetUrunCell.swift in Sources */,
+				E761907028CE70450051550F /* DetayProtocol.swift in Sources */,
+				E761903628CE6A070051550F /* ViewController.swift in Sources */,
+				E761907528CE70A60051550F /* Yemek.swift in Sources */,
+				E76190A128CEA4190051550F /* DetayPresenter.swift in Sources */,
+				E761908D28CE7D1C0051550F /* AnasayfaVC.swift in Sources */,
+				E761908B28CE773B0051550F /* LoginInteractor.swift in Sources */,
+				E761906A28CE700A0051550F /* LoginProtocol.swift in Sources */,
+				E761903228CE6A070051550F /* AppDelegate.swift in Sources */,
+				E761908728CE763D0051550F /* LoginVC.swift in Sources */,
+				E761903428CE6A070051550F /* SceneDelegate.swift in Sources */,
+				E76190A328CEA4540051550F /* DetayRouter.swift in Sources */,
+				E761907928CE729C0051550F /* SepetYemek.swift in Sources */,
+				E761909D28CE95870051550F /* DetayInteractor.swift in Sources */,
+				E76190A928CEB1340051550F /* SepetRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E761903728CE6A070051550F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E761903828CE6A070051550F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E761903C28CE6A090051550F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E761903D28CE6A090051550F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E761904028CE6A090051550F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E761904128CE6A090051550F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E761904328CE6A090051550F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK6JZPN47S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GastroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asilcetinkaya.GastroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E761904428CE6A090051550F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK6JZPN47S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GastroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asilcetinkaya.GastroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E761902928CE6A060051550F /* Build configuration list for PBXProject "GastroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E761904028CE6A090051550F /* Debug */,
+				E761904128CE6A090051550F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E761904228CE6A090051550F /* Build configuration list for PBXNativeTarget "GastroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E761904328CE6A090051550F /* Debug */,
+				E761904428CE6A090051550F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E761909428CE870F0051550F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E761909728CE87210051550F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E761909528CE870F0051550F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E761909428CE870F0051550F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E761909828CE87210051550F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E761909728CE87210051550F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E761902628CE6A060051550F /* Project object */;
+}
