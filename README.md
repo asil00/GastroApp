@@ -13,6 +13,7 @@ Food ordering application written with VIPER architecture
 - API
 - Delegate
 - Protocol
+- Alamofire
 
 
 https://user-images.githubusercontent.com/91785379/190431066-d0fe0d9e-52b0-4602-9da0-bfac20cfa4d0.mp4
