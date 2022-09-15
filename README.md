@@ -10,7 +10,7 @@ Food ordering application written with VIPER architecture
 - VIPER
 - TableView
 - SearchBar
-- API
+- RestAPI
 - Delegate
 - Protocol
 - Alamofire
